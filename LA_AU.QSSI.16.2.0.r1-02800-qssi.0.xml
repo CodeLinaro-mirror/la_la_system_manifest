@@ -2,42 +2,6 @@
 <manifest>
     <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
-  <project remote="clo-la" name="device/amlogic/yukawa" path="device/amlogic/yukawa" revision="7390d4381e2a2f54da41c3929d8e456ef702964c" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/amlogic/yukawa-kernel" path="device/amlogic/yukawa-kernel" revision="ff822d1ec33dc9a8225d34a1c576f8af26fdb0fd" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/common" path="device/common" revision="ae6921651e468bad7be7b1c8ad7bfd3a9caceb30" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/arm64" path="device/generic/arm64" revision="71380158d818de918338e34a9cb72316fe3cfa4e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon" revision="5be6c1b1d84a1f046329176d5da3368cb6547703" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/art" path="device/generic/art" revision="d9c26558defdcdf2907c2abde9a9320dd404a7a9" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/car" path="device/generic/car" revision="08c50085c171354f383bc6ad2f0b7915d0c24471" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/common" path="device/generic/common" revision="f7ed2b378e0318aae667c93472739825f0425387" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/goldfish" path="device/generic/goldfish" revision="318eeb15bcefdbd249a3e7bb45ee97ee2033f733" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/goldfish-opengl" path="device/generic/goldfish-opengl" revision="ead7f901aba914b5c08dc585113d8c8aa92926f4" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="device/generic/trusty" path="device/generic/trusty" revision="dff9209d2962ccc184c5d86a425a853017d020cc" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/x86" path="device/generic/x86" revision="4394cdf90094161d5caf4f7237c883ab2862c2f2" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/generic/x86_64" path="device/generic/x86_64" revision="43ed01aceb08b2ab661b4fb50b9a5fe145012d4b" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/google/atv" path="device/google/atv" revision="e56dfcd5e3fec14e0745f284f037a3af733a8c3e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="device/google/contexthub" path="device/google/contexthub" revision="c1e6884217efec8f146a07cee6d6883dfc9b5c19" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/google/cuttlefish" path="device/google/cuttlefish" revision="4679683813f0003b7d5bf2d625bc879e942474da" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="device/google/cuttlefish_prebuilts" path="device/google/cuttlefish_prebuilts" revision="c4726655d512d33a14e3a9f69b69f30873cf4336" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="device/google/cuttlefish_vmm" path="device/google/cuttlefish_vmm" revision="4fe073ba4f65a6212ed1da5381e16047c25b6f6a" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/google/trout" path="device/google/trout" revision="3a81b38bc64cd8f1fb23900d9c90c72281793b63" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="device/google_car" path="device/google_car" revision="d382679d71e669b7b84322b00a38c87206bb5527" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/linaro/dragonboard" path="device/linaro/dragonboard" revision="3f2c9edb512c3ed0c5ec6da533d56c85cc9e15d6" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/linaro/dragonboard-kernel" path="device/linaro/dragonboard-kernel" revision="31e38925fd9b4e30662d5d72e66440e4006c2613" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/linaro/hikey" path="device/linaro/hikey" revision="8c08ace6aa2d94fc52cb1b6d34cbff1f36bd911e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/linaro/hikey-kernel" path="device/linaro/hikey-kernel" revision="f836f3465d48dbb69412e22d5cb1ac3f69808971" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="device/qcom/qssi" path="device/qcom/qssi" revision="61fda66bac4591adf63fd7a14e2f4cbdef383c8d" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
-  <project remote="clo-la" name="device/qcom/qssi_32" path="device/qcom/qssi_32" revision="06dc6ab422c11f0f9ba1cfe6990447c05799fa72" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
-  <project remote="clo-la" name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" revision="ff74d9e8d93477a3f09190af41c3ec04aec2af67" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
-  <project remote="clo-la" name="device/qcom/qssi_au" path="device/qcom/qssi_au" revision="799d2c6316bc5082171e76d76031510edd28295d" upstream="refs/heads/qcom-qssi-auto.lnx.15.1.r7-rel" groups="qc-common-sys"/>
-  <project remote="clo-la" name="device/qcom/sepolicy" path="device/qcom/sepolicy" revision="f18bf3af8373b353589ba8adb7dd43c991a6e33f" upstream="refs/heads/auto-sepolicy-sysintf.lnx.15.0.r10-rel" groups="qc-common-sys-intf"/>
-  <project remote="clo-la" name="device/sample" path="device/sample" revision="153db5c9c72b008c3aa7264afc8939e6bace2101" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="kernel/configs" path="kernel/configs" revision="a27d4834e3cdfcbba663e9d56525d63df2a29479" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="kernel/prebuilts/6.1/arm64" path="kernel/prebuilts/6.1/arm64" revision="45f90b2e34f6cbc8a6c0c87c292e0b9d8873d20d" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="kernel/prebuilts/6.1/x86-64" path="kernel/prebuilts/6.1/x86_64" revision="4d8767b0c0e4270d144369f9337dee58b85404ef" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="kernel/prebuilts/6.12/arm64" path="kernel/prebuilts/6.12/arm64" revision="6dbc646844860485577eb56b3b1c439cde45cdb0" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="kernel/prebuilts/6.12/x86-64" path="kernel/prebuilts/6.12/x86-64" revision="8ac33f72cb29582007f3f6ab2d6c14a2b78600f0" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="kernel/prebuilts/6.6/arm64" path="kernel/prebuilts/6.6/arm64" revision="22d24c62a3f056e2bdfc15bcf59c9954df9d1e02" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="kernel/prebuilts/6.6/x86-64" path="kernel/prebuilts/6.6/x86-64" revision="752a9cc2c5814ed709af1db75d4e49d0a5e771af" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="kernel/prebuilts/common-modules/trusty/6.12/arm64" path="kernel/prebuilts/common-modules/trusty/6.12/arm64" revision="cb8548e4f4753cd5a779438fe74322722cc424f1" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="kernel/prebuilts/common-modules/trusty/6.6/arm64" path="kernel/prebuilts/common-modules/trusty/6.6/arm64" revision="9792d85c0811655a12db6515bbf38ff96fbf4722" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
@@ -56,26 +20,10 @@
   <project remote="clo-la" name="platform/bionic" path="bionic" revision="e614fb1121e273c02a634a42c40b3b4067e56ac4" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/bootable/libbootloader" path="bootable/libbootloader" revision="e50b504f0e72606d89de818259453ac9ef64c69d" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/bootable/recovery" path="bootable/recovery" revision="dc271255d017d2a58e6cde5a4467bde13ed2176a" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
-  <project remote="clo-la" name="platform/build_repo" path="build/make" revision="ef9ff345dd4c615b3f9f6690807903c82120673c" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys-intf">
-    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
-    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
-    <linkfile dest="build/core" src="core"/>
-    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
-    <linkfile dest="build/target" src="target"/>
-    <linkfile dest="build/tools" src="tools"/>
-  </project>
-  <project remote="clo-la" name="platform/build/bazel" path="build/bazel" revision="d7f1711dae7556e0bec861af33c8992f341c5f5a" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys">
-    <linkfile dest="WORKSPACE" src="bazel.WORKSPACE"/>
-    <linkfile dest="BUILD" src="bazel.BUILD"/>
-  </project>
   <project remote="clo-la" name="platform/build/bazel_common_rules" path="build/bazel_common_rules" revision="37254f7972ceb8123dcf2136521430d811105d96" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/build/blueprint" path="build/blueprint" revision="ab88833fb1020a4b55f4e9723755bd8148187723" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/build/pesto" path="build/pesto" revision="ed8ef8685ac3de672ba317438d36c9bb7f0cdaf2" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/build/release" path="build/release" revision="a16f391cf5a13e12313592be1c725014f74553a7" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="platform/build/soong" path="build/soong" revision="f7c0da917ff32e1ce4548d74991fa319263a6c03" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys-intf">
-    <linkfile dest="Android.bp" src="root.bp"/>
-    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
-  </project>
   <project remote="clo-la" name="platform/cts" path="cts" revision="49a324da66f189c3b25c49e353779953c7cc790f" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/dalvik" path="dalvik" revision="3661bc2798c6797b9483133e949e5f6009ad1bea" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/developers/build" path="developers/build" revision="d353a188ca6ec4b5eba25b5fbd7bcb8ce61322fb" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
@@ -130,6 +78,85 @@
   <project remote="clo-la" name="platform/external/bpftool" path="external/bpftool" revision="3fe68221d2a43f3c990ebee8ebf0bef0a4bc7759" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/external/brotli" path="external/brotli" revision="e51ed79542e77d2b472fd563ae9d1984cd4b051d" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/external/bsdiff" path="external/bsdiff" revision="c67eaba3d71d8be4bc9562fcebd1c69fea5e1628" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/amlogic/yukawa" path="device/amlogic/yukawa" revision="7390d4381e2a2f54da41c3929d8e456ef702964c" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/amlogic/yukawa-kernel" path="device/amlogic/yukawa-kernel" revision="ff822d1ec33dc9a8225d34a1c576f8af26fdb0fd" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="platform/build_repo" path="build/make" revision="ef9ff345dd4c615b3f9f6690807903c82120673c" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys-intf">
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project remote="clo-la" name="platform/build/bazel" path="build/bazel" revision="d7f1711dae7556e0bec861af33c8992f341c5f5a" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys">
+    <linkfile dest="WORKSPACE" src="bazel.WORKSPACE"/>
+    <linkfile dest="BUILD" src="bazel.BUILD"/>
+  </project>
+  <project remote="clo-la" name="platform/build/soong" path="build/soong" revision="f7c0da917ff32e1ce4548d74991fa319263a6c03" upstream="refs/heads/automotive-aosp-va.lnx.16.1.r1-rel" groups="aosp,qc-common-sys-intf">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" revision="4bad69d93d8b1a61707933c241ffcfdfbaf510cf" upstream="refs/heads/av-aosp-qc-sys.lnx.15.0.r10-rel" groups="qc-common-sys-intf">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/audio_system_product.mk" src="configs/qssi/audio_system_product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="d49cfc7cb6180de42e94512e644ae627609d8828" upstream="refs/heads/bt-sysintf.lnx.15.1.r8-rel" groups="qc-common-sys-intf">
+    <linkfile dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="bb8631d0d9f96a1b5d9eaf5d635d678aba7df67b" upstream="refs/heads/auto-android-core-sysintf.lnx.16.0.r1-rel" groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
+    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
+    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk"/>
+    <linkfile dest="build.sh" src="build/build.sh"/>
+    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
+    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="97f3f6ca9fb31b49da9bd8b8f7d107510deef458" upstream="refs/heads/display-sys.lnx.15.0.r12-rel" groups="qc-common-sys-intf">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="595b1438d8c03754e7068fd9c2d85245bb0ff1f7" upstream="refs/heads/display-sysintf.lnx.15.0.r15-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/someip-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/someip" revision="20f739bdaf72e6399e53b0b5dccff499abd42962" upstream="refs/heads/someip-sysintf.lnx.15.0.r6-rel" groups="qc-common-sys-intf">
+    <linkfile dest="vendor/qcom/defs/board-defs/system/someip-commonsys-intf-board.mk" src="someip-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/someip-commonsys-intf-board.mk" src="someip-commonsys-intf-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/system/someip-system-opensource-product.mk" src="someip-system-opensource-product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/commonsys/wifi" path="vendor/qcom/opensource/commonsys/wifi" revision="6582bbdabb65230f1a1f6e406c9d3467d8ffdc7d" upstream="refs/heads/wlan-auto-service-sys.lnx.14.0.r18-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/qtiwifi-ship-product-defs-system.mk" src="configs/qtiwifi-ship-product-defs-system.mk"/>
+  </project>
+  <project remote="clo-la" name="trusty/host/common" path="trusty/host/common" revision="9a89d1ad2258910c7716d4d952d95e3be2483e30" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys">
+    <linkfile dest="trusty/WORKSPACE.bazel" src="bazel/WORKSPACE.bazel"/>
+    <linkfile dest="trusty/.bazelrc" src="bazel/bazelrc"/>
+  </project>
+  <project remote="clo-la" name="device/common" path="device/common" revision="ae6921651e468bad7be7b1c8ad7bfd3a9caceb30" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/arm64" path="device/generic/arm64" revision="71380158d818de918338e34a9cb72316fe3cfa4e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon" revision="5be6c1b1d84a1f046329176d5da3368cb6547703" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/art" path="device/generic/art" revision="d9c26558defdcdf2907c2abde9a9320dd404a7a9" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/car" path="device/generic/car" revision="08c50085c171354f383bc6ad2f0b7915d0c24471" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/common" path="device/generic/common" revision="f7ed2b378e0318aae667c93472739825f0425387" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/goldfish" path="device/generic/goldfish" revision="318eeb15bcefdbd249a3e7bb45ee97ee2033f733" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/goldfish-opengl" path="device/generic/goldfish-opengl" revision="ead7f901aba914b5c08dc585113d8c8aa92926f4" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/generic/trusty" path="device/generic/trusty" revision="dff9209d2962ccc184c5d86a425a853017d020cc" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/x86" path="device/generic/x86" revision="4394cdf90094161d5caf4f7237c883ab2862c2f2" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/generic/x86_64" path="device/generic/x86_64" revision="43ed01aceb08b2ab661b4fb50b9a5fe145012d4b" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/google/atv" path="device/google/atv" revision="e56dfcd5e3fec14e0745f284f037a3af733a8c3e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/google/contexthub" path="device/google/contexthub" revision="c1e6884217efec8f146a07cee6d6883dfc9b5c19" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/google/cuttlefish" path="device/google/cuttlefish" revision="4679683813f0003b7d5bf2d625bc879e942474da" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/google/cuttlefish_prebuilts" path="device/google/cuttlefish_prebuilts" revision="c4726655d512d33a14e3a9f69b69f30873cf4336" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/google/cuttlefish_vmm" path="device/google/cuttlefish_vmm" revision="4fe073ba4f65a6212ed1da5381e16047c25b6f6a" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/google/trout" path="device/google/trout" revision="3a81b38bc64cd8f1fb23900d9c90c72281793b63" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/google_car" path="device/google_car" revision="d382679d71e669b7b84322b00a38c87206bb5527" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/linaro/dragonboard" path="device/linaro/dragonboard" revision="3f2c9edb512c3ed0c5ec6da533d56c85cc9e15d6" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/linaro/dragonboard-kernel" path="device/linaro/dragonboard-kernel" revision="31e38925fd9b4e30662d5d72e66440e4006c2613" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/linaro/hikey" path="device/linaro/hikey" revision="8c08ace6aa2d94fc52cb1b6d34cbff1f36bd911e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/linaro/hikey-kernel" path="device/linaro/hikey-kernel" revision="f836f3465d48dbb69412e22d5cb1ac3f69808971" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/qcom/qssi" path="device/qcom/qssi" revision="61fda66bac4591adf63fd7a14e2f4cbdef383c8d" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project remote="clo-la" name="device/qcom/qssi_32" path="device/qcom/qssi_32" revision="06dc6ab422c11f0f9ba1cfe6990447c05799fa72" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
   <project remote="clo-la" name="platform/external/bzip2" path="external/bzip2" revision="0ac9a9daea5cce2e775d5da949508593e2ee9206" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/external/caliper" path="external/caliper" revision="51dbb32c5296ff9734546bade9f6102cb92b8c25" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/external/capicxx-core-runtime" path="external/capicxx-core-runtime" revision="166dae1ceace4f4b835bd4545ae8d7fee739d05d" upstream="refs/heads/auto-soa-infra.lnx.2.0.r7-rel" groups="qc-common-sys-intf"/>
@@ -229,6 +256,16 @@
   <project remote="clo-la" name="platform/external/google-fonts/fraunces" path="external/google-fonts/fraunces" revision="d4ee78207845a8ffaf61dfbc864867d4a4909c02" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/external/google-fonts/karla" path="external/google-fonts/karla" revision="88eb02ddd6a1910700f778db0fcb9018a0c2a7e5" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/external/google-fonts/lato" path="external/google-fonts/lato" revision="ca70dc46b54c97020666e19cd9cd48541dfd65d8" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="device/qcom/qssi_32go" path="device/qcom/qssi_32go" revision="ff74d9e8d93477a3f09190af41c3ec04aec2af67" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project remote="clo-la" name="device/qcom/qssi_au" path="device/qcom/qssi_au" revision="799d2c6316bc5082171e76d76031510edd28295d" upstream="refs/heads/qcom-qssi-auto.lnx.15.1.r7-rel" groups="qc-common-sys"/>
+  <project remote="clo-la" name="device/qcom/sepolicy" path="device/qcom/sepolicy" revision="f18bf3af8373b353589ba8adb7dd43c991a6e33f" upstream="refs/heads/auto-sepolicy-sysintf.lnx.15.0.r10-rel" groups="qc-common-sys-intf"/>
+  <project remote="clo-la" name="device/sample" path="device/sample" revision="153db5c9c72b008c3aa7264afc8939e6bace2101" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="kernel/configs" path="kernel/configs" revision="a27d4834e3cdfcbba663e9d56525d63df2a29479" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
+  <project remote="clo-la" name="kernel/prebuilts/6.1/arm64" path="kernel/prebuilts/6.1/arm64" revision="45f90b2e34f6cbc8a6c0c87c292e0b9d8873d20d" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="kernel/prebuilts/6.1/x86-64" path="kernel/prebuilts/6.1/x86_64" revision="4d8767b0c0e4270d144369f9337dee58b85404ef" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="kernel/prebuilts/6.12/arm64" path="kernel/prebuilts/6.12/arm64" revision="6dbc646844860485577eb56b3b1c439cde45cdb0" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="kernel/prebuilts/6.12/x86-64" path="kernel/prebuilts/6.12/x86-64" revision="8ac33f72cb29582007f3f6ab2d6c14a2b78600f0" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
+  <project remote="clo-la" name="kernel/prebuilts/6.6/arm64" path="kernel/prebuilts/6.6/arm64" revision="22d24c62a3f056e2bdfc15bcf59c9954df9d1e02" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/external/google-fonts/lustria" path="external/google-fonts/lustria" revision="12827f84fd0adc4db95ade52c5e2636f79b7365b" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/external/google-fonts/rubik" path="external/google-fonts/rubik" revision="7f900fd2f4f6d61e88f35e10f659572e8684ceb4" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="platform/external/google-fonts/source-sans-pro" path="external/google-fonts/source-sans-pro" revision="cf00d24489e0e1f4a77c1b404e5dcc23fc979f3b" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
@@ -975,49 +1012,16 @@
   <project remote="clo-la" name="platform/tools/trebuchet" path="tools/trebuchet" revision="0b2ed7a748cbfda39ac7e11c800fcb005d6cb046" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/vendor/google_shared/build/release" path="vendor/google_shared/build/release" revision="5020ac62d51bb57973b719ab48d833a6cfc0760f" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys,pdk"/>
   <project remote="clo-la" name="platform/vendor/google_shared/satellite/common" path="vendor/google_shared/satellite/common" revision="32ab1b49932e639804949f7b5a64c53cfe072292" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys,pdk-fs"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" revision="4bad69d93d8b1a61707933c241ffcfdfbaf510cf" upstream="refs/heads/av-aosp-qc-sys.lnx.15.0.r10-rel" groups="qc-common-sys-intf">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/audio_system_product.mk" src="configs/qssi/audio_system_product.mk"/>
-  </project>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="72667757a44e7c338910ed4cb81294be2565e1ff" upstream="refs/heads/bt-sys.lnx.15.1.r8-rel" groups="qc-common-sys-intf"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="d49cfc7cb6180de42e94512e644ae627609d8828" upstream="refs/heads/bt-sysintf.lnx.15.1.r8-rel" groups="qc-common-sys-intf">
-    <linkfile dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt-commonsys-intf-board.mk" src="bt-commonsys-intf-board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
-  </project>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="bb8631d0d9f96a1b5d9eaf5d635d678aba7df67b" upstream="refs/heads/auto-android-core-sysintf.lnx.16.0.r1-rel" groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
-    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk" src="image_generation_tool/generate_vendor_bundle.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk" src="image_generation_tool/config/image_generation_tool_product.mk"/>
-    <linkfile dest="build.sh" src="build/build.sh"/>
-    <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
-    <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
-  </project>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/core-utils-sys" path="vendor/qcom/opensource/core-utils-sys" revision="a9e7ef915df0b3415a1c94cc39d358477aadfbf3" upstream="refs/heads/auto-android-core-sys.lnx.15.0.r8-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="f9ddb744de137f8acfb5807e24c095c79c67f910" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="refs/heads/data-sys.lnx.13.0.r39-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="97f3f6ca9fb31b49da9bd8b8f7d107510deef458" upstream="refs/heads/display-sys.lnx.15.0.r12-rel" groups="qc-common-sys-intf">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-  </project>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="595b1438d8c03754e7068fd9c2d85245bb0ff1f7" upstream="refs/heads/display-sysintf.lnx.15.0.r15-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
-  </project>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="9ff587035fddde3d21724b61f9807f347d69e03a" upstream="refs/heads/data-sys.lnx.13.0.r39-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="86d03f65430d1e3a65f8bfae95c6d74dffeffebb" upstream="refs/heads/auto-android-core-sysintf.lnx.16.0.r1-rel" groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/packages/modules/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/modules/Bluetooth" revision="b98a276826b46e7dc1c0c20def3284833fa5a624" upstream="refs/heads/bt-sys.lnx.15.1.r8-rel" groups="qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/soa-examples" path="vendor/qcom/opensource/soa-examples" revision="78a457adc2f03b3e685fc5f3f404122735d438b4" upstream="refs/heads/auto-soa-infra.lnx.2.0.r7-rel" groups="qc-common-sys-intf"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/soa-infra" path="vendor/qcom/opensource/soa-infra" revision="3970c1d0914a12de8bf081d4bc13fc2b4da85f1b" upstream="refs/heads/auto-soa-infra.lnx.2.0.r7-rel" groups="qc-common-sys-intf"/>
-  <project remote="clo-la" name="platform/vendor/qcom-opensource/someip-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/someip" revision="20f739bdaf72e6399e53b0b5dccff499abd42962" upstream="refs/heads/someip-sysintf.lnx.15.0.r6-rel" groups="qc-common-sys-intf">
-    <linkfile dest="vendor/qcom/defs/board-defs/system/someip-commonsys-intf-board.mk" src="someip-commonsys-intf-board.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/someip-commonsys-intf-board.mk" src="someip-commonsys-intf-board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/system/someip-system-opensource-product.mk" src="someip-system-opensource-product.mk"/>
-  </project>
   <project remote="clo-la" name="platform/vendor/qcom/opensource/commonsys-intf/audio" path="vendor/qcom/opensource/commonsys-intf/audio" revision="916a8c0a84dab3de6c1c6c67d3dc8b987edec6cf" upstream="refs/heads/audio-sysintf.lnx.15.0.r12-rel" groups="qc-common-sys-intf"/>
-  <project remote="clo-la" name="platform/vendor/qcom/opensource/commonsys/wifi" path="vendor/qcom/opensource/commonsys/wifi" revision="6582bbdabb65230f1a1f6e406c9d3467d8ffdc7d" upstream="refs/heads/wlan-auto-service-sys.lnx.14.0.r18-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/qtiwifi-ship-product-defs-system.mk" src="configs/qtiwifi-ship-product-defs-system.mk"/>
-  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/core-utils-sys" path="vendor/qcom/opensource/core-utils-sys" revision="a9e7ef915df0b3415a1c94cc39d358477aadfbf3" upstream="refs/heads/auto-android-core-sys.lnx.15.0.r8-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="f9ddb744de137f8acfb5807e24c095c79c67f910" upstream="refs/heads/qcom-sysintf.lnx.15.0.r8-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="refs/heads/data-sys.lnx.13.0.r39-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="9ff587035fddde3d21724b61f9807f347d69e03a" upstream="refs/heads/data-sys.lnx.13.0.r39-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="86d03f65430d1e3a65f8bfae95c6d74dffeffebb" upstream="refs/heads/auto-android-core-sysintf.lnx.16.0.r1-rel" groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
   <project remote="clo-la" name="toolchain/pgo-profiles" path="toolchain/pgo-profiles" revision="a8e32b3aa2738f6ae5c94f64572d9b342dead416" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="tools/platform-compat" path="tools/platform-compat" revision="044355b7f534afa11fbf05c014b738b9a63319a5" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys-intf"/>
   <project remote="clo-la" name="trusty/app/authmgr" path="trusty/user/app/authmgr" revision="ecf6d936695f78670ecd60a9d1e29921ee055ebe" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
@@ -1040,10 +1044,6 @@
   <project remote="clo-la" name="trusty/external/musl" path="external/trusty/musl" revision="5b69f34786e38d31fe78f3e78b8433a124ccac7f" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="trusty/external/trusted-firmware-a" path="external/trusty/arm-trusted-firmware" revision="d18c1ea17f251ff7c39a54ab99a273dcd705dafc" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="trusty/external/trusty" path="external/trusty/bootloader" revision="08b9ab9ca541162954f23dbfcfa1af504282666e" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
-  <project remote="clo-la" name="trusty/host/common" path="trusty/host/common" revision="9a89d1ad2258910c7716d4d952d95e3be2483e30" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys">
-    <linkfile dest="trusty/WORKSPACE.bazel" src="bazel/WORKSPACE.bazel"/>
-    <linkfile dest="trusty/.bazelrc" src="bazel/bazelrc"/>
-  </project>
   <project remote="clo-la" name="trusty/lib" path="trusty/user/base" revision="fedc2415c66abf667a1e7860df841cf293215f3d" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="trusty/lk/common" path="external/trusty/lk" revision="387c9712404c60da0c03078eff31628457ac8f3c" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
   <project remote="clo-la" name="trusty/lk/nxp" path="trusty/hardware/nxp" revision="b7edfedaf3b4660d1d1b57087424bb56e5f59bde" upstream="refs/heads/aosp.lnx.16.0.r5-rel" groups="aosp,qc-common-sys"/>
