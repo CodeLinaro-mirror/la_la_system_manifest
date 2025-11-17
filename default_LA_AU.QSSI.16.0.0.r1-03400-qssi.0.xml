@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org/clo/la" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/aosp.lnx.16.0.r4-rel"/>
+  <project name="device/amlogic/yukawa" groups="aosp,qc-common-sys"/>
+  <project name="device/amlogic/yukawa-kernel" groups="aosp,qc-common-sys" clone-depth="2"/>
+  <project name="device/common" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/arm64" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/armv7-a-neon" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/art" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/car" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/common" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/goldfish" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/goldfish-opengl" groups="aosp,qc-common-sys-intf"/>
+  <project name="device/generic/trusty" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/x86" groups="aosp,qc-common-sys"/>
+  <project name="device/generic/x86_64" groups="aosp,qc-common-sys"/>
+  <project name="device/google/atv" groups="aosp,qc-common-sys-intf"/>
+  <project name="device/google/contexthub" groups="aosp,qc-common-sys"/>
+  <project name="device/google/cuttlefish" groups="aosp,qc-common-sys-intf"/>
+  <project name="device/google/cuttlefish_prebuilts" groups="aosp,qc-common-sys-intf"/>
+  <project name="device/google/cuttlefish_vmm" groups="aosp,qc-common-sys"/>
+  <project name="device/google/trout" groups="aosp,qc-common-sys-intf"/>
+  <project name="device/google_car" groups="aosp,qc-common-sys"/>
+  <project name="device/linaro/dragonboard" groups="aosp,qc-common-sys"/>
+  <project name="device/linaro/dragonboard-kernel" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="device/linaro/hikey" groups="aosp,qc-common-sys"/>
+  <project name="device/linaro/hikey-kernel" groups="aosp,qc-common-sys"/>
+  <project name="device/qcom/qssi" revision="refs/heads/qcom-sysintf.lnx.15.0.r9-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project name="device/qcom/qssi_32" revision="refs/heads/qcom-sysintf.lnx.15.0.r9-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project name="device/qcom/qssi_32go" revision="refs/heads/qcom-sysintf.lnx.15.0.r9-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project name="device/qcom/qssi_au" revision="refs/heads/qcom-qssi-auto.lnx.16.0.r1-rel" groups="qc-common-sys"/>
+  <project name="device/qcom/qssi_au_64" revision="refs/heads/qcom-qssi-auto.lnx.16.0.r1-rel" groups="qc-common-sys"/>
+  <project name="device/qcom/sepolicy" revision="refs/heads/auto-sepolicy-sysintf.lnx.15.0.r9-rel" groups="qc-common-sys-intf"/>
+  <project name="device/sample" groups="aosp,qc-common-sys-intf"/>
+  <project name="kernel/configs" groups="aosp,qc-common-sys-intf"/>
+  <project name="kernel/prebuilts/6.1/arm64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/6.1/x86-64" path="kernel/prebuilts/6.1/x86_64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/6.12/arm64" groups="aosp,qc-common-sys-intf,pdk-fs" clone-depth="1"/>
+  <project name="kernel/prebuilts/6.12/x86-64" groups="aosp,qc-common-sys-intf,pdk-fs" clone-depth="1"/>
+  <project name="kernel/prebuilts/6.6/arm64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/6.6/x86-64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/common-modules/trusty/6.12/arm64" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="kernel/prebuilts/common-modules/trusty/6.6/arm64" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/6.1/arm64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/6.1/x86-64" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/6.12/arm64" groups="aosp,qc-common-sys-intf,pdk-fs" clone-depth="1"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/6.12/x86-64" groups="aosp,qc-common-sys-intf,pdk-fs" clone-depth="1"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/6.6/arm64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/6.6/x86-64" groups="aosp,qc-common-sys"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="kernel/prebuilts/mainline/arm64" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="kernel/prebuilts/mainline/x86-64" path="kernel/prebuilts/mainline/x86_64" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="kernel/tests" groups="aosp,qc-common-sys"/>
+  <project name="platform/art" path="art" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/bionic" path="bionic" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/bootable/libbootloader" path="bootable/libbootloader" groups="aosp,qc-common-sys"/>
+  <project name="platform/bootable/recovery" path="bootable/recovery" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/build_repo" path="build/make" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+    <linkfile src="core" dest="build/core"/>
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+    <linkfile src="target" dest="build/target"/>
+    <linkfile src="tools" dest="build/tools"/>
+  </project>
+  <project name="platform/build/bazel" path="build/bazel" groups="aosp,qc-common-sys">
+    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE"/>
+    <linkfile src="bazel.BUILD" dest="BUILD"/>
+  </project>
+  <project name="platform/build/bazel_common_rules" path="build/bazel_common_rules" groups="aosp,qc-common-sys"/>
+  <project name="platform/build/blueprint" path="build/blueprint" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/build/pesto" path="build/pesto" groups="aosp,qc-common-sys"/>
+  <project name="platform/build/release" path="build/release" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys"/>
+  <project name="platform/build/soong" path="build/soong" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf">
+    <linkfile src="root.bp" dest="Android.bp"/>
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+  </project>
+  <project name="platform/cts" path="cts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/dalvik" path="dalvik" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/developers/build" path="developers/build" groups="aosp,qc-common-sys"/>
+  <project name="platform/development" path="development" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/AFLplusplus" path="external/AFLplusplus" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/FP16" path="external/FP16" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/FXdiv" path="external/FXdiv" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/MPAndroidChart" path="external/MPAndroidChart" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/OpenCSD" path="external/OpenCSD" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/TestParameterInjector" path="external/TestParameterInjector" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/XNNPACK" path="external/XNNPACK" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/aac" path="external/aac" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/abseil-cpp" path="external/abseil-cpp" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/accessibility-test-framework" path="external/accessibility-test-framework" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/accompanist" path="external/accompanist" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/android-key-attestation" path="external/android-key-attestation" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/android_onboarding" path="external/android_onboarding" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/androidplot" path="external/androidplot" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/angle" path="external/angle" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/anonymous-counting-tokens" path="external/anonymous-counting-tokens" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" revision="refs/heads/ant-sysintf.lnx.1.0.r82-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/external/antlr" path="external/antlr" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/apache-commons-bcel" path="external/apache-commons-bcel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/apache-commons-compress" path="external/apache-commons-compress" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/apache-commons-io" path="external/apache-commons-io" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/apache-commons-lang" path="external/apache-commons-lang" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/apache-commons-math" path="external/apache-commons-math" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/apache-harmony" path="external/apache-harmony" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/apache-http" path="external/apache-http" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/apache-velocity-engine" path="external/apache-velocity-engine" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/apache-xml" path="external/apache-xml" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/arm-trusted-firmware" path="external/arm-trusted-firmware" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/auto" path="external/auto" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/autotest" path="external/autotest" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/avb" path="external/avb" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/aws-crt-java" path="external/aws-crt-java" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/aws-eventstream-java" path="external/aws-eventstream-java" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/aws-sdk-java-v2" path="external/aws-sdk-java-v2" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazel-skylib" path="external/bazel-skylib" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-kotlin-rules" path="external/bazelbuild-kotlin-rules" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-platforms" path="external/bazelbuild-platforms" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-remote-apis" path="external/bazelbuild-remote-apis" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/bazelbuild-rules_android" path="external/bazelbuild-rules_android" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_cc" path="external/bazelbuild-rules_cc" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_go" path="external/bazelbuild-rules_go" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_java" path="external/bazelbuild-rules_java" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_license" path="external/bazelbuild-rules_license" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_python" path="external/bazelbuild-rules_python" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_rust" path="external/bazelbuild-rules_rust" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bazelbuild-rules_testing" path="external/bazelbuild-rules_testing" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/bc" path="external/bc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/bcc" path="external/bcc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/blktrace" path="external/blktrace" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/boost-submodules/boost" path="external/boost" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf" sync-s="true"/>
+  <project name="platform/external/boost-submodules/mpl" path="external/boost/libs/mpl" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/external/boringssl" path="external/boringssl" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/bouncycastle" path="external/bouncycastle" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/bpftool" path="external/bpftool" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/brotli" path="external/brotli" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/bsdiff" path="external/bsdiff" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/bzip2" path="external/bzip2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/caliper" path="external/caliper" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/capicxx-core-runtime" path="external/capicxx-core-runtime" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/external/capicxx-someip-runtime" path="external/capicxx-someip-runtime" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/external/capstone" path="external/capstone" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/cblas" path="external/cblas" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/cbor-java" path="external/cbor-java" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/chromium-crossbench" path="external/chromium-crossbench" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/chromium-trace" path="external/chromium-trace" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/chromium-webview" path="external/chromium-webview" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/chromiumos-config" path="external/chromiumos-config" groups="aosp,qc-common-sys-intf,pdk-fs" clone-depth="1"/>
+  <project name="platform/external/clang" path="external/clang" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/cldr" path="external/cldr" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/cn-cbor" path="external/cn-cbor" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/compiler-rt" path="external/compiler-rt" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/connectedappssdk" path="external/connectedappssdk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/conscrypt" path="external/conscrypt" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/coreboot" path="external/coreboot" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/cpu_features" path="external/cpu_features" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/cpuinfo" path="external/cpuinfo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/crcalc" path="external/crcalc" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/cronet" path="external/cronet" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/crosvm" path="external/crosvm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/curl" path="external/curl" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dagger2" path="external/dagger2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/deqp" path="external/deqp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/deqp-deps/amber" path="external/deqp-deps/amber" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/deqp-deps/glslang" path="external/deqp-deps/glslang" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dexmaker" path="external/dexmaker" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dlmalloc" path="external/dlmalloc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dng_sdk" path="external/dng_sdk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dnsmasq" path="external/dnsmasq" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/doclava" path="external/doclava" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dokka" path="external/dokka" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/double-conversion" path="external/double-conversion" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/downloader" path="external/downloader" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/dtc" path="external/dtc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/dynamic_depth" path="external/dynamic_depth" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/e2fsprogs" path="external/e2fsprogs" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/easymock" path="external/easymock" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/edid-decode" path="external/edid-decode" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/eigen" path="external/eigen" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/elfutils" path="external/elfutils" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/emboss" path="external/emboss" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/emma" path="external/emma" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/erofs-utils" path="external/erofs-utils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/error_prone" path="external/error_prone" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/escapevelocity" path="external/escapevelocity" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/ethtool" path="external/ethtool" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/executorch" path="external/executorch" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/exfatprogs" path="external/exfatprogs" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/exoplayer" path="external/exoplayer" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/expat" path="external/expat" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/f2fs-tools" path="external/f2fs-tools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fastrpc" path="external/fastrpc" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/fbjni" path="external/fbjni" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fdlibm" path="external/fdlibm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fec" path="external/fec" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/federated-compute" path="external/federated-compute" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/fft2d" path="external/fft2d" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fhir/spec/r4" path="external/fhir/spec/r4" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/firebase-messaging" path="external/firebase-messaging" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/flac" path="external/flac" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/flashrom" path="external/flashrom" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/flatbuffers" path="external/flatbuffers" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fmtlib" path="external/fmtlib" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fonttools" path="external/fonttools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/freetype" path="external/freetype" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fsck_msdos" path="external/fsck_msdos" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/fsverity-utils" path="external/fsverity-utils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/gemmlowp" path="external/gemmlowp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/geojson-jackson" path="external/geojson-jackson" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/geonames" path="external/geonames" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/gflags" path="external/gflags" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/giflib" path="external/giflib" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/glide" path="external/glide" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/gmmlib" path="external/gmmlib" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/go-cmp" path="external/go-cmp" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/golang-protobuf" path="external/golang-protobuf" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-auth-library-java" path="external/google-auth-library-java" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/google-benchmark" path="external/google-benchmark" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-breakpad" path="external/google-breakpad" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-cloud-java" path="external/google-cloud-java" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/google-fonts/arbutus-slab" path="external/google-fonts/arbutus-slab" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/arvo" path="external/google-fonts/arvo" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/barlow" path="external/google-fonts/barlow" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/big-shoulders-text" path="external/google-fonts/big-shoulders-text" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-fonts/fraunces" path="external/google-fonts/fraunces" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/karla" path="external/google-fonts/karla" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/lato" path="external/google-fonts/lato" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/lustria" path="external/google-fonts/lustria" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/rubik" path="external/google-fonts/rubik" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fonts/source-sans-pro" path="external/google-fonts/source-sans-pro" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-fonts/zilla-slab" path="external/google-fonts/zilla-slab" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/google-fruit" path="external/google-fruit" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-java-format" path="external/google-java-format" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-smali" path="external/google-smali" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/google-styleguide" path="external/google-styleguide" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/googleapis" path="external/googleapis" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/googletest" path="external/googletest" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/gptfdisk" path="external/gptfdisk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/grpc-grpc" path="external/grpc-grpc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/grpc-grpc-java" path="external/grpc-grpc-java" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/gsc-utils" path="external/gsc-utils" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/gson" path="external/gson" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/gturri-aXMLRPC" path="external/gturri-aXMLRPC" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/gturri-jISO8601" path="external/gturri-jISO8601" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/guava" path="external/guava" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/guice" path="external/guice" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/gwp_asan" path="external/gwp_asan" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/hamcrest" path="external/hamcrest" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/iamf_tools" path="external/iamf_tools" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/icing" path="external/icing" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/icu" path="external/icu" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/igt-gpu-tools" path="external/igt-gpu-tools" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/image_io" path="external/image_io" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/ims" path="external/ims" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/intel-media-driver" path="external/intel-media-driver" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/iperf3" path="external/iperf3" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/iproute2" path="external/iproute2" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/iptables" path="external/iptables" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/iputils" path="external/iputils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/iw" path="external/iw" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jackson-annotations" path="external/jackson-annotations" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/jackson-core" path="external/jackson-core" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/jackson-databind" path="external/jackson-databind" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/jacoco" path="external/jacoco" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jakarta.inject" path="external/jakarta.inject" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/jarjar" path="external/jarjar" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/javaparser" path="external/javaparser" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/javapoet" path="external/javapoet" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/javasqlite" path="external/javasqlite" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/javassist" path="external/javassist" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jazzer-api" path="external/jazzer-api" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/jcommander" path="external/jcommander" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jemalloc_new" path="external/jemalloc_new" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jetpack-camera-app" path="external/jetpack-camera-app" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/jimfs" path="external/jimfs" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/jipp" path="external/jipp" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/jline" path="external/jline" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jsilver" path="external/jsilver" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jsmn" path="external/jsmn" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/json-c" path="external/json-c" revision="refs/heads/automotive-aosp-legacy-build-tools.lnx.2.0.r23-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/external/json-schema-validator" path="external/json-schema-validator" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jsoncpp" path="external/jsoncpp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jsoup" path="external/jsoup" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/jspecify" path="external/jspecify" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jsr305" path="external/jsr305" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/jsr330" path="external/jsr330" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/junit" path="external/junit" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/junit-params" path="external/junit-params" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kernel-headers" path="external/kernel-headers" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/kmod" path="external/kmod" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kotlin-compose-compiler" path="external/kotlin-compose-compiler" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kotlin.metadata" path="external/kotlin.metadata" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/kotlinc" path="external/kotlinc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kotlinpoet" path="external/kotlinpoet" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/kotlinx.atomicfu" path="external/kotlinx.atomicfu" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kotlinx.coroutines" path="external/kotlinx.coroutines" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kotlinx.metadata" path="external/kotlinx.metadata" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/kotlinx.serialization" path="external/kotlinx.serialization" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ksoap2" path="external/ksoap2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/ksp" path="external/ksp" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ktfmt" path="external/ktfmt" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/leakcanary2" path="external/leakcanary2" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/leveldb" path="external/leveldb" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libaom" path="external/libaom" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libavc" path="external/libavc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libbackup" path="external/libbackup" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libbpf" path="external/libbpf" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libbrillo" path="external/libbrillo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libcap" path="external/libcap" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libcap-ng" path="external/libcap-ng" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libchrome" path="external/libchrome" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libchrome-gestures" path="external/libchrome-gestures" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libconfig" path="external/libconfig" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libcups" path="external/libcups" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libcxx" path="external/libcxx" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libcxxabi" path="external/libcxxabi" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libdav1d" path="external/libdav1d" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libdisplay-info" path="external/libdisplay-info" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libdivsufsort" path="external/libdivsufsort" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libdrm" path="external/libdrm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libepoxy" path="external/libepoxy" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libese" path="external/libese" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libevent" path="external/libevent" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libexif" path="external/libexif" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libffi" path="external/libffi" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libfuse" path="external/libfuse" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libgav1" path="external/libgav1" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libgsm" path="external/libgsm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libhevc" path="external/libhevc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libkmsxx" path="external/libkmsxx" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/liblc3" path="external/liblc3" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libldac" path="external/libldac" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libmonet" path="external/libmonet" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libmpeg2" path="external/libmpeg2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libnfnetlink" path="external/libnfnetlink" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libnl" path="external/libnl" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libogg" path="external/libogg" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libopenapv" path="external/libopenapv" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libopus" path="external/libopus" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libpalmrejection" path="external/libpalmrejection" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libpcap" path="external/libpcap" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libpciaccess" path="external/libpciaccess" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/libphonenumber" path="external/libphonenumber" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libpng" path="external/libpng" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libprotobuf-mutator" path="external/libprotobuf-mutator" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libsrtp2" path="external/libsrtp2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libtextclassifier" path="external/libtextclassifier" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libtraceevent" path="external/libtraceevent" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libtracefs" path="external/libtracefs" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libultrahdr" path="external/libultrahdr" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/liburing" path="external/liburing" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libusb" path="external/libusb" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libutf" path="external/libutf" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libva" path="external/libva" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libva-utils" path="external/libva-utils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libvpx" path="external/libvpx" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libwebm" path="external/libwebm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libwebsockets" path="external/libwebsockets" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libxaac" path="external/libxaac" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libxkbcommon" path="external/libxkbcommon" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/libxml2" path="external/libxml2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/libyuv" path="external/libyuv" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/licenseclassifier" path="external/licenseclassifier" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/linux-firmware" path="external/linux-firmware" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/linux-kselftest" path="external/linux-kselftest" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/llvm" path="external/llvm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/llvm-libc" path="external/llvm-libc" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/lottie" path="external/lottie" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/ltp" path="external/ltp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/lua" path="external/lua" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/lz4" path="external/lz4" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/lzma" path="external/lzma" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/marisa-trie" path="external/marisa-trie" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mbedtls" path="external/mbedtls" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/mdnsresponder" path="external/mdnsresponder" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mesa3d" path="external/mesa3d" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/mime-support" path="external/mime-support" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/minigbm" path="external/minigbm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/minijail" path="external/minijail" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mksh" path="external/mksh" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/ml_dtypes" path="external/ml_dtypes" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/mobile-data-download" path="external/mobile-data-download" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/mobly-bundled-snippets" path="external/mobly-bundled-snippets" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/mobly-snippet-lib" path="external/mobly-snippet-lib" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/mockftpserver" path="external/mockftpserver" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mockito" path="external/mockito" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mockito-kotlin" path="external/mockito-kotlin" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mockwebserver" path="external/mockwebserver" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/modp_b64" path="external/modp_b64" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/moshi" path="external/moshi" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mp4parser" path="external/mp4parser" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mpdecimal" path="external/mpdecimal" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/ms-tpm-20-ref" path="external/ms-tpm-20-ref" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/mtools" path="external/mtools" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/musl" path="external/musl" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/nanohttpd" path="external/nanohttpd" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/nanopb-c" path="external/nanopb-c" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/naver-fonts" path="external/naver-fonts" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/neon_2_sse" path="external/neon_2_sse" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/neven" path="external/neven" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/newfs_msdos" path="external/newfs_msdos" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/nist-pkits" path="external/nist-pkits" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/nist-sip" path="external/nist-sip" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/nos/host/generic" path="external/nos/host/generic" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/noto-fonts" path="external/noto-fonts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/nullaway" path="external/nullaway" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/oauth" path="external/oauth" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/obex" path="external/obex" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/objenesis" path="external/objenesis" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/oboe" path="external/oboe" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/obstack" path="external/obstack" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/oj-libjdwp" path="external/oj-libjdwp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/okhttp" path="external/okhttp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/okio" path="external/okio" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/one-true-awk" path="external/one-true-awk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/open-dice" path="external/open-dice" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/opencensus-java" path="external/opencensus-java" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/openscreen" path="external/openscreen" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/openthread" path="external/openthread" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/openwrt-prebuilts" path="external/openwrt-prebuilts" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ot-br-posix" path="external/ot-br-posix" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ow2-asm" path="external/ow2-asm" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/owasp/java-encoder" path="external/owasp/java-encoder" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pandora/avatar" path="external/pandora/avatar" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/pandora/bt-test-interfaces" path="external/pandora/bt-test-interfaces" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/pandora/mmi2grpc" path="external/pandora/mmi2grpc" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/parameter-framework" path="external/parameter-framework" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pciutils" path="external/pciutils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pcre" path="external/pcre" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pdfium" path="external/pdfium" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/perfetto" path="external/perfetto" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/perfmark" path="external/perfmark" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/pffft" path="external/pffft" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/piex" path="external/piex" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pigweed" path="external/pigweed" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ply" path="external/ply" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/private-join-and-compute" path="external/private-join-and-compute" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/protobuf" path="external/protobuf" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pthreadpool" path="external/pthreadpool" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/puffin" path="external/puffin" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/absl-py" path="external/python/absl-py" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/apitools" path="external/python/apitools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/asn1crypto" path="external/python/asn1crypto" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/bumble" path="external/python/bumble" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/cachetools" path="external/python/cachetools" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/cpython3" path="external/python/cpython3" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/dateutil" path="external/python/dateutil" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/enum34" path="external/python/enum34" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/google-auth-library-python" path="external/python/google-auth-library-python" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/httplib2" path="external/python/httplib2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/ipaddress" path="external/python/ipaddress" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/jinja" path="external/python/jinja" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/mako" path="external/python/mako" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/markupsafe" path="external/python/markupsafe" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/mobly" path="external/python/mobly" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/oauth2client" path="external/python/oauth2client" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/parse_type" path="external/python/parse_type" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/portpicker" path="external/python/portpicker" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/pyasn1" path="external/python/pyasn1" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/pycparser" path="external/python/pycparser" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/pyee" path="external/python/pyee" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/pyfakefs" path="external/python/pyfakefs" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/pyserial" path="external/python/pyserial" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/python-api-core" path="external/python/python-api-core" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/pyyaml" path="external/python/pyyaml" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/rsa" path="external/python/rsa" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/six" path="external/python/six" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/timeout-decorator" path="external/python/timeout-decorator" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/typing" path="external/python/typing" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/python/typing_extensions" path="external/python/typing_extensions" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/uritemplates" path="external/python/uritemplates" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/python/watchdog" path="external/python/watchdog" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/pytorch" path="external/pytorch" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rappor" path="external/rappor" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/regex-re2" path="external/regex-re2" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/renderscript-intrinsics-replacement-toolkit" path="external/renderscript-intrinsics-replacement-toolkit" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/replicaisland" path="external/replicaisland" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rmi4utils" path="external/rmi4utils" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/rnnoise" path="external/rnnoise" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/robolectric" path="external/robolectric" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/roboto-flex-fonts" path="external/roboto-flex-fonts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/roboto-fonts" path="external/roboto-fonts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rootdev" path="external/rootdev" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/rust/android-crates-io" path="external/rust/android-crates-io" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/rust/autocxx" path="external/rust/autocxx" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/rust/beto-rust" path="external/rust/beto-rust" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/rust/crabbyavif" path="external/rust/crabbyavif" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rust/crates/openssl" path="external/rust/crates/openssl" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/rust/crates/simplelog" path="external/rust/crates/simplelog" revision="refs/heads/auto-android-core-sys.lnx.15.0.r9-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project name="platform/external/rust/crates/v4l2r" path="external/rust/crates/v4l2r" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rust/crates/vhost-device-vsock" path="external/rust/crates/vhost-device-vsock" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/rust/cros-libva" path="external/rust/cros-libva" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rust/cxx" path="external/rust/cxx" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/rust/pica" path="external/rust/pica" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/ruy" path="external/ruy" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/s2-geometry-library-java" path="external/s2-geometry-library-java" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sandboxed-api" path="external/sandboxed-api" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/scapy" path="external/scapy" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/scrypt" path="external/scrypt" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/scudo" path="external/scudo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sdk-platform-java" path="external/sdk-platform-java" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/seccomp-tests" path="external/seccomp-tests" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/selinux" path="external/selinux" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/setfilters" path="external/setfilters" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/setupcompat" path="external/setupcompat" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/setupdesign" path="external/setupdesign" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sg3_utils" path="external/sg3_utils" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/shflags" path="external/shflags" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/skia" path="external/skia" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sl4a" path="external/sl4a" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/slf4j" path="external/slf4j" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/snakeyaml" path="external/snakeyaml" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sonic" path="external/sonic" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sonivox" path="external/sonivox" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/spdx-tools" path="external/spdx-tools" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/speex" path="external/speex" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/sqlite" path="external/sqlite" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/squashfs-tools" path="external/squashfs-tools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/starlark-go" path="external/starlark-go" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/stg" path="external/stg" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/strace" path="external/strace" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/stressapptest" path="external/stressapptest" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/external/swiftshader" path="external/swiftshader" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/tagsoup" path="external/tagsoup" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tcpdump" path="external/tcpdump" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tensorflow" path="external/tensorflow" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/testng" path="external/testng" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tflite-support" path="external/tflite-support" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/threetenbp" path="external/threetenbp" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/timezone-boundary-builder" path="external/timezone-boundary-builder" groups="aosp,qc-common-sys" clone-depth="2"/>
+  <project name="platform/external/tink" path="external/tink" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/tink-java" path="external/tink-java" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/tinyalsa" path="external/tinyalsa" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tinyalsa_new" path="external/tinyalsa_new" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tinycompress" path="external/tinycompress" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tinyxml2" path="external/tinyxml2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/toybox" path="external/toybox" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/tpm2-tss" path="external/tpm2-tss" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/trace-cmd" path="external/trace-cmd" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/tremolo" path="external/tremolo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/truth" path="external/truth" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/turbine" path="external/turbine" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/ublksrv" path="external/ublksrv" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/unicode" path="external/unicode" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/usb-ids" path="external/usb-ids" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/external/uwb" path="external/uwb" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/external/v4l-utils" path="external/v4l-utils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/v4l2_codec2" path="external/v4l2_codec2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/vboot_reference" path="external/vboot_reference" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/virglrenderer" path="external/virglrenderer" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/virtio-media" path="external/virtio-media" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/vixl" path="external/vixl" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/vogar" path="external/vogar" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/volley" path="external/volley" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/vsomeip" path="external/vsomeip" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/external/vulkan-headers" path="external/vulkan-headers" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/walt" path="external/walt" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/wayland_repo" path="external/wayland" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/wayland-protocols" path="external/wayland-protocols" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/webp" path="external/webp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/webrtc" path="external/webrtc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/wmediumd" path="external/wmediumd" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/wuffs-mirror-release-c" path="external/wuffs-mirror-release-c" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/wycheproof" path="external/wycheproof" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/xmp_toolkit" path="external/xmp_toolkit" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/xz-embedded" path="external/xz-embedded" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/xz-java" path="external/xz-java" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/yapf" path="external/yapf" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/zlib" path="external/zlib" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/zopfli" path="external/zopfli" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/zstd" path="external/zstd" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/external/zucchini" path="external/zucchini" groups="aosp,qc-common-sys"/>
+  <project name="platform/external/zxing" path="external/zxing" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/av" path="frameworks/av" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/base" path="frameworks/base" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/ex" path="frameworks/ex" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib" groups="aosp,qc-common-sys"/>
+  <project name="platform/frameworks/libs/binary_translation" path="frameworks/libs/binary_translation" groups="aosp,qc-common-sys"/>
+  <project name="platform/frameworks/libs/gsma_services" path="frameworks/libs/gsma_services" groups="aosp,qc-common-sys"/>
+  <project name="platform/frameworks/libs/modules-utils" path="frameworks/libs/modules-utils" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/libs/native_bridge_support" path="frameworks/libs/native_bridge_support" groups="aosp,qc-common-sys"/>
+  <project name="platform/frameworks/libs/service_entitlement" path="frameworks/libs/service_entitlement" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/libs/systemui" path="frameworks/libs/systemui" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/minikin" path="frameworks/minikin" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/multidex" path="frameworks/multidex" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/native" path="frameworks/native" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" groups="aosp,qc-common-sys"/>
+  <project name="platform/frameworks/opt/chips" path="frameworks/opt/chips" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/tv/tvsystem" path="frameworks/opt/tv/tvsystem" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/proto_logging" path="frameworks/proto_logging" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/rs" path="frameworks/rs" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/google/aemu" path="hardware/google/aemu" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/google/apf" path="hardware/google/apf" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/google/av" path="hardware/google/av" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/google/camera" path="hardware/google/camera" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/google/gfxstream" path="hardware/google/gfxstream" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/google/interfaces" path="hardware/google/interfaces" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/google/pixel" path="hardware/google/pixel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/google/pixel-sepolicy" path="hardware/google/pixel-sepolicy" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/interfaces" path="hardware/interfaces" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/invensense" path="hardware/invensense" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/libhardware" path="hardware/libhardware" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/nxp/keymint" path="hardware/nxp/keymint" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/nxp/nxp_mcu_loader" path="hardware/nxp/nxp_mcu_loader" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/nxp/weaver" path="hardware/nxp/weaver" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/hardware/ril" path="hardware/ril" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/hardware/samsung/nfc" path="hardware/samsung/nfc" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/st/nfc" path="hardware/st/nfc" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/st/secure_element" path="hardware/st/secure_element" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/st/secure_element2" path="hardware/st/secure_element2" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/synaptics/wlan" path="hardware/synaptics/wlan" groups="aosp,qc-common-sys"/>
+  <project name="platform/hardware/ti/am57x" path="hardware/ti/am57x" groups="aosp,qc-common-sys"/>
+  <project name="platform/libcore" path="libcore" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/libnativehelper" path="libnativehelper" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/AvatarPicker" path="packages/apps/AvatarPicker" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Calendar" path="packages/apps/Calendar" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Car/CalendarPrebuilt" path="packages/apps/Car/CalendarPrebuilt" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/DataSubscriptionReference" path="packages/apps/Car/DataSubscriptionReference" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/packages/apps/Car/DebuggingRestrictionController" path="packages/apps/Car/DebuggingRestrictionController" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/DialerPrebuilt" path="packages/apps/Car/DialerPrebuilt" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/DriverUIPrebuilt" path="packages/apps/Car/DriverUIPrebuilt" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/MediaPrebuilt" path="packages/apps/Car/MediaPrebuilt" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/MessengerPrebuilt" path="packages/apps/Car/MessengerPrebuilt" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Car/Provision" path="packages/apps/Car/Provision" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/RadioPrebuilt" path="packages/apps/Car/RadioPrebuilt" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/packages/apps/Car/References" path="packages/apps/Car/References" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Car/RotaryController" path="packages/apps/Car/RotaryController" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Car/RotaryImePrebuilt" path="packages/apps/Car/RotaryImePrebuilt" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/SettingsIntelligence" path="packages/apps/Car/SettingsIntelligence" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/SystemUI" path="packages/apps/Car/SystemUI" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/Templates" path="packages/apps/Car/Templates" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/VoiceControl" path="packages/apps/Car/VoiceControl" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Car/systemlibs" path="packages/apps/Car/systemlibs" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/DeviceDiagnostics" path="packages/apps/DeviceDiagnostics" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Messaging" path="packages/apps/Messaging" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Multiuser" path="packages/apps/Multiuser" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Music" path="packages/apps/Music" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Nfc" path="packages/apps/Nfc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/OnDeviceAppPrediction" path="packages/apps/OnDeviceAppPrediction" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/PrivateSpace" path="packages/apps/PrivateSpace" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/packages/apps/Protips" path="packages/apps/Protips" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Provision" path="packages/apps/Provision" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/QuickAccessWallet" path="packages/apps/QuickAccessWallet" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Stk" path="packages/apps/Stk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/SystemUIGo" path="packages/apps/SystemUIGo" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/TV" path="packages/apps/TV" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Tag" path="packages/apps/Tag" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/Traceur" path="packages/apps/Traceur" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/apps/TvFeedbackConsent" path="packages/apps/TvFeedbackConsent" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/TvSystemUI" path="packages/apps/TvSystemUI" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/inputmethods/LeanbackIME" path="packages/inputmethods/LeanbackIME" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/AdServices" path="packages/modules/AdServices" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/AppSearch" path="packages/modules/AppSearch" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/packages/modules/Bluetooth" path="packages/modules/Bluetooth" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/CellBroadcastService" path="packages/modules/CellBroadcastService" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/ConfigInfrastructure" path="packages/modules/ConfigInfrastructure" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/Connectivity" path="packages/modules/Connectivity" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/CrashRecovery" path="packages/modules/CrashRecovery" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/DeviceLock" path="packages/modules/DeviceLock" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/DnsResolver" path="packages/modules/DnsResolver" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/GeoTZ" path="packages/modules/GeoTZ" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/Gki" path="packages/modules/Gki" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/HealthFitness" path="packages/modules/HealthFitness" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/IPsec" path="packages/modules/IPsec" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/ImsMedia" path="packages/modules/ImsMedia" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/IntentResolver" path="packages/modules/IntentResolver" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/Media" path="packages/modules/Media" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/NeuralNetworks" path="packages/modules/NeuralNetworks" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/Nfc" path="packages/modules/Nfc" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/OnDevicePersonalization" path="packages/modules/OnDevicePersonalization" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/Permission" path="packages/modules/Permission" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/Profiling" path="packages/modules/Profiling" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/RemoteKeyProvisioning" path="packages/modules/RemoteKeyProvisioning" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/RuntimeI18n" path="packages/modules/RuntimeI18n" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/Scheduling" path="packages/modules/Scheduling" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/SdkExtensions" path="packages/modules/SdkExtensions" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/StatsD" path="packages/modules/StatsD" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/Telephony" path="packages/modules/Telephony" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/ThreadNetwork" path="packages/modules/ThreadNetwork" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/UprobeStats" path="packages/modules/UprobeStats" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/packages/modules/Uwb" path="packages/modules/Uwb" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/Virtualization" path="packages/modules/Virtualization" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/WebViewBootstrap" path="packages/modules/WebViewBootstrap" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/modules/Wifi" path="packages/modules/Wifi" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/adb" path="packages/modules/adb" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/common" path="packages/modules/common" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/modules/desktop/Serviceability" path="packages/modules/desktop/Serviceability" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/packages/modules/vndk" path="packages/modules/vndk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/ContactsKeysProvider" path="packages/providers/ContactsKeysProvider" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/Car" path="packages/services/Car" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/DeviceAsWebcam" path="packages/services/DeviceAsWebcam" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/services/DroidfoodAttestationFixer" path="packages/services/DroidfoodAttestationFixer" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/services/Iwlan" path="packages/services/Iwlan" groups="aosp,qc-common-sys"/>
+  <project name="platform/packages/services/Mms" path="packages/services/Mms" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/Mtp" path="packages/services/Mtp" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/services/Telephony" path="packages/services/Telephony" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/pdk" path="pdk" groups="aosp,qc-common-sys"/>
+  <project name="platform/platform_testing" path="platform_testing" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/asuite" path="prebuilts/asuite" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/bazel/common" path="prebuilts/bazel/common" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/bazel/darwin-x86_64" path="prebuilts/bazel/darwin-x86_64" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/bazel/linux-x86_64" path="prebuilts/bazel/linux-x86_64" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/bundletool" path="prebuilts/bundletool" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/cmake/linux-x86" path="prebuilts/cmake/linux-x86" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/devtools" path="prebuilts/devtools" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/jdk/jdk21" path="prebuilts/jdk/jdk21" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/ktlint" path="prebuilts/ktlint" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/misc" path="prebuilts/misc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/module_sdk/AdServices" path="prebuilts/module_sdk/AdServices" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/ConfigInfrastructure" path="prebuilts/module_sdk/ConfigInfrastructure" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Connectivity" path="prebuilts/module_sdk/Connectivity" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/CrashRecovery" path="prebuilts/module_sdk/CrashRecovery" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/module_sdk/DeviceLock" path="prebuilts/module_sdk/DeviceLock" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/HealthFitness" path="prebuilts/module_sdk/HealthFitness" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/IPsec" path="prebuilts/module_sdk/IPsec" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Nfc" path="prebuilts/module_sdk/Nfc" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/OnDevicePersonalization" path="prebuilts/module_sdk/OnDevicePersonalization" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Permission" path="prebuilts/module_sdk/Permission" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Profiling" path="prebuilts/module_sdk/Profiling" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/RemoteKeyProvisioning" path="prebuilts/module_sdk/RemoteKeyProvisioning" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/SdkExtensions" path="prebuilts/module_sdk/SdkExtensions" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/UprobeStats" path="prebuilts/module_sdk/UprobeStats" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Uwb" path="prebuilts/module_sdk/Uwb" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/WebViewBootstrap" path="prebuilts/module_sdk/WebViewBootstrap" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/ndk" path="prebuilts/ndk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/r8" path="prebuilts/r8" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/runtime" path="prebuilts/runtime" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/rust" path="prebuilts/rust" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/sdk" path="prebuilts/sdk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/tools" path="prebuilts/tools" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/prebuilts/vndk/v30" path="prebuilts/vndk/v30" groups="aosp,qc-common-sys-intf" clone-depth="1"/>
+  <project name="platform/prebuilts/vndk/v31" path="prebuilts/vndk/v31" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/vndk/v32" path="prebuilts/vndk/v32" groups="aosp,qc-common-sys"/>
+  <project name="platform/prebuilts/vndk/v33" path="prebuilts/vndk/v33" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/prebuilts/vndk/v34" path="prebuilts/vndk/v34" groups="aosp,qc-common-sys" clone-depth="1"/>
+  <project name="platform/sdk" path="sdk" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/acpi/bert_collector" path="system/acpi/bert_collector" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/apex" path="system/apex" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/authgraph" path="system/authgraph" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/bpf" path="system/bpf" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/bpfprogs" path="system/bpfprogs" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/ca-certificates" path="system/ca-certificates" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/chre" path="system/chre" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/core" path="system/core" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/cros-codecs" path="system/cros-codecs" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/system/dmesgd" path="system/dmesgd" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/extras" path="system/extras" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/gatekeeper" path="system/gatekeeper" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/gsid" path="system/gsid" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/hardware/interfaces" path="system/hardware/interfaces" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/hwservicemanager" path="system/hwservicemanager" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/incremental_delivery" path="system/incremental_delivery" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/keymaster" path="system/keymaster" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/keymint" path="system/keymint" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/libartpalette" path="system/libartpalette" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libbase" path="system/libbase" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libcppbor" path="system/libcppbor" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/libfmq" path="system/libfmq" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libhidl" path="system/libhidl" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libhwbinder" path="system/libhwbinder" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libprocinfo" path="system/libprocinfo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/librustutils" path="system/librustutils" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/libsysprop" path="system/libsysprop" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libufdt" path="system/libufdt" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/liburingutils" path="system/liburingutils" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/system/libvintf" path="system/libvintf" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/libziparchive" path="system/libziparchive" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/linkerconfig" path="system/linkerconfig" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/logging" path="system/logging" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/media" path="system/media" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/libdmabufheap" path="system/memory/libdmabufheap" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/libion" path="system/memory/libion" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/libmemtrack" path="system/memory/libmemtrack" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/libmemunreachable" path="system/memory/libmemunreachable" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/lmkd" path="system/memory/lmkd" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/memory/mmd" path="system/memory/mmd" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/netd" path="system/netd" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/nfc" path="system/nfc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/nvram" path="system/nvram" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/secretkeeper" path="system/secretkeeper" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/system/secure_element" path="system/secure_element" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/system/security" path="system/security" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/see/authmgr" path="system/see/authmgr" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/sepolicy" path="system/sepolicy" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/server_configurable_flags" path="system/server_configurable_flags" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/teeui" path="system/teeui" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/timezone" path="system/timezone" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/tools/aidl" path="system/tools/aidl" revision="refs/heads/automotive-aosp-va.lnx.16.0.r1-rel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/tools/hidl" path="system/tools/hidl" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/tools/mkbootimg" path="system/tools/mkbootimg" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/tools/sysprop" path="system/tools/sysprop" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/tools/xsdc" path="system/tools/xsdc" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/unwinding" path="system/unwinding" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/update_engine" path="system/update_engine" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/usb_info_tools" path="system/usb_info_tools" groups="aosp,qc-common-sys"/>
+  <project name="platform/system/vold" path="system/vold" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/system/zygote" path="system/zygote" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="platform/test/app_compat/csuite" path="test/app_compat/csuite" groups="aosp,qc-common-sys"/>
+  <project name="platform/test/catbox" path="test/catbox" groups="aosp,qc-common-sys"/>
+  <project name="platform/test/dittosuite" path="test/dittosuite" groups="aosp,qc-common-sys"/>
+  <project name="platform/test/mlts/benchmark" path="test/mlts/benchmark" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/mlts/models" path="test/mlts/models" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/robolectric-extensions" path="test/robolectric-extensions" groups="aosp,qc-common-sys,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project name="platform/test/suite_harness" path="test/suite_harness" groups="aosp,qc-common-sys"/>
+  <project name="platform/test/vts" path="test/vts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/vts-testcase/security" path="test/vts-testcase/security" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/aadevtools" path="tools/aadevtools" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/acloud" path="tools/acloud" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/apifinder" path="tools/apifinder" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/apksig" path="tools/apksig" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/apkzlib" path="tools/apkzlib" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/asuite" path="tools/asuite" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/camera" path="tools/camera" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/content_addressed_storage/prebuilts" path="tools/content_addressed_storage/prebuilts" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/currysrc" path="tools/currysrc" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/deviceinfra/prebuilts" path="tools/deviceinfra/prebuilts" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/tools/dexter" path="tools/dexter" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/doc_generation" path="tools/doc_generation" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/loganalysis" path="tools/loganalysis" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/metalava" path="tools/metalava" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/ndkports" path="tools/ndkports" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/netsim" path="tools/netsim" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/repohooks" path="tools/repohooks" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/rr_prebuilt" path="tools/rr_prebuilt" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/security" path="tools/security" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/test/connectivity" path="tools/test/connectivity" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/test/mobly_extensions" path="tools/test/mobly_extensions" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/test/mobly_snippets" path="tools/test/mobly_snippets" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/tradefederation_repo" path="tools/tradefederation/core" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" groups="aosp,qc-common-sys"/>
+  <project name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/treble" path="tools/treble" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/tools/trebuchet" path="tools/trebuchet" groups="aosp,qc-common-sys-intf"/>
+  <project name="platform/vendor/google_shared/build/release" path="vendor/google_shared/build/release" groups="aosp,qc-common-sys,pdk"/>
+  <project name="platform/vendor/google_shared/satellite/common" path="vendor/google_shared/satellite/common" groups="aosp,qc-common-sys,pdk-fs"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" revision="refs/heads/av-aosp-qc-sys.lnx.16.0.r1-rel" groups="qc-common-sys-intf">
+    <linkfile src="configs/qssi/audio_system_product.mk" dest="vendor/qcom/defs/product-defs/system/audio_system_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="refs/heads/bt-sys.lnx.15.1.r9-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="refs/heads/bt-sysintf.lnx.15.1.r9-rel" groups="qc-common-sys-intf">
+    <linkfile src="bt-commonsys-intf-board.mk" dest="vendor/qcom/defs/board-defs/system/bt-commonsys-intf-board.mk"/>
+    <linkfile src="bt-commonsys-intf-board.mk" dest="vendor/qcom/defs/board-defs/vendor/bt-commonsys-intf-board.mk"/>
+    <linkfile src="bt-system-opensource-product.mk" dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="refs/heads/auto-android-core-sysintf.lnx.16.0.r2-rel" groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
+    <linkfile src="build/QSSI_violators.mk" dest="vendor/qcom/build/tasks/QSSI_violators.mk"/>
+    <linkfile src="build/QMAA_enforcement.mk" dest="vendor/qcom/build/tasks/QMAA_enforcement.mk"/>
+    <linkfile src="build/vendor_prop_context_restriction.mk" dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk"/>
+    <linkfile src="image_generation_tool/generate_vendor_bundle.mk" dest="vendor/qcom/build/tasks/generate_vendor_bundle.mk"/>
+    <linkfile src="image_generation_tool/config/image_generation_tool_product.mk" dest="vendor/qcom/defs/product-defs/vendor/image_generation_tool_product.mk"/>
+    <linkfile src="build/build.sh" dest="build.sh"/>
+    <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk"/>
+    <linkfile src="build/stop_scan.mk" dest="disregard/Android.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/core-utils-sys" path="vendor/qcom/opensource/core-utils-sys" revision="refs/heads/auto-android-core-sys.lnx.15.0.r9-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="refs/heads/qcom-sysintf.lnx.15.0.r9-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="refs/heads/data-sys.lnx.13.0.r41-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="refs/heads/display-sys.lnx.16.0.r1-rel" groups="qc-common-sys-intf">
+    <linkfile src="config/display-product-commonsys.mk" dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="refs/heads/display-sysintf.lnx.16.0.r1-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3">
+    <linkfile src="config/display-product-system.mk" dest="vendor/qcom/defs/product-defs/system/display-product-system.mk"/>
+    <linkfile src="config/display-interfaces-product.mk" dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="refs/heads/data-sys.lnx.13.0.r41-rel" groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="refs/heads/auto-android-core-sysintf.lnx.16.0.r2-rel" groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3"/>
+  <project name="platform/vendor/qcom-opensource/packages/modules/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/modules/Bluetooth" revision="refs/heads/bt-sys.lnx.15.1.r9-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/vendor/qcom-opensource/soa-examples" path="vendor/qcom/opensource/soa-examples" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/vendor/qcom-opensource/soa-infra" path="vendor/qcom/opensource/soa-infra" revision="refs/heads/auto-soa-infra.lnx.2.0.r8-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/vendor/qcom-opensource/someip-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/someip" revision="refs/heads/someip-sysintf.lnx.15.0.r7-rel" groups="qc-common-sys-intf">
+    <linkfile src="someip-commonsys-intf-board.mk" dest="vendor/qcom/defs/board-defs/system/someip-commonsys-intf-board.mk"/>
+    <linkfile src="someip-commonsys-intf-board.mk" dest="vendor/qcom/defs/board-defs/vendor/someip-commonsys-intf-board.mk"/>
+    <linkfile src="someip-system-opensource-product.mk" dest="vendor/qcom/defs/product-defs/system/someip-system-opensource-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom/opensource/commonsys-intf/audio" path="vendor/qcom/opensource/commonsys-intf/audio" revision="refs/heads/audio-sysintf.lnx.16.0.r4-rel" groups="qc-common-sys-intf"/>
+  <project name="platform/vendor/qcom/opensource/commonsys/wifi" path="vendor/qcom/opensource/commonsys/wifi" revision="refs/heads/wlan-auto-service-sys.lnx.14.0.r19-rel" groups="qc-common-sys,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3">
+    <linkfile src="configs/qtiwifi-ship-product-defs-system.mk" dest="vendor/qcom/defs/product-defs/system/qtiwifi-ship-product-defs-system.mk"/>
+  </project>
+  <project name="toolchain/pgo-profiles" groups="aosp,qc-common-sys-intf"/>
+  <project name="tools/platform-compat" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/authmgr" path="trusty/user/app/authmgr" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/avb" path="trusty/user/app/avb" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/cast-auth" path="trusty/user/app/cast-auth" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/confirmationui" path="trusty/user/app/confirmationui" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/gatekeeper" path="trusty/user/app/gatekeeper" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/keymaster" path="trusty/user/app/keymaster" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/keymint" path="trusty/user/app/keymint" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/sample" path="trusty/user/app/sample" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/secretkeeper" path="trusty/user/app/secretkeeper" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/app/storage" path="trusty/user/app/storage" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/device/arm/generic-arm64" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/device/arm/vexpress-a15" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/device/common" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="trusty/device/desktop" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="trusty/device/nxp/imx7d" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/device/x86/generic-x86_64" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/external/headers" path="external/trusty/headers" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/external/musl" path="external/trusty/musl" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/external/trusted-firmware-a" path="external/trusty/arm-trusted-firmware" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/external/trusty" path="external/trusty/bootloader" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/host/common" groups="aosp,qc-common-sys"/>
+  <project name="trusty/lib" path="trusty/user/base" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/lk/common" path="external/trusty/lk" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/lk/nxp" path="trusty/hardware/nxp" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/lk/trusty" path="trusty/kernel" groups="aosp,qc-common-sys-intf"/>
+  <project name="trusty/user/desktop" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+  <project name="trusty/vendor/google/aosp" groups="aosp,qc-common-sys-intf,pdk-fs"/>
+</manifest>
